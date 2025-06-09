@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>你的品牌或標題</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      object-fit: contain;
+      z-index: 1;
+      background-color: #000;
+    }
+    .content {
+      position: absolute;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 6px #000;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- 更換 src，支援 mp4/ogg/webm -->
+  <video class="video-bg" src="C:\Users\ecwxq\OneDrive\圖片\螢幕擷取畫面\借款\自架\小額借款,日付200元、輕鬆週轉不是夢~.mp4" autoplay loop muted playsinline></video>
+  <div class="content">
+  </div>
+</body>
+</html>
